@@ -661,14 +661,120 @@
         </div>
       </div>
     </footer>
-    <!-- Modal -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- Modal ПОВЕРНУТИ is-hidden в бекдроп!!!!!-->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="close-modal" data-modal-close>
           <svg width="17px" height="17px" aria-label="close model">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+
+        <form class="modal-form">
+          <!-- Заголовок -->
+          <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+
+          <!-- Ім'я -->
+          <label class="modal-form-field">
+            <span class="modal-form-input-descr">Ім'я</span>
+            <span class="modal-form-input-wrapper"
+              ><input
+                class="modal-form-input"
+                type="text"
+                name="user-name"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇ'єЄґҐ]+" />
+              <svg
+                class="modal-form-icon"
+                width="18px"
+                height="18px"
+                aria-label="person icon"
+              >
+                <use href="./images/icons.svg#personform"></use></svg
+            ></span>
+          </label>
+
+          <!-- Телефон -->
+          <label class="modal-form-field">
+            <span class="modal-form-input-descr">Телефон</span>
+            <span class="modal-form-input-wrapper"
+              ><input
+                class="modal-form-input"
+                type="tel"
+                name="user-tel"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" /><svg
+                class="modal-form-icon"
+                width="18px"
+                height="18px"
+                aria-label="phone icon"
+              >
+                <use href="./images/icons.svg#phoneform"></use></svg
+            ></span>
+          </label>
+
+          <!-- Пошта -->
+          <label class="modal-form-field">
+            <span class="modal-form-input-descr">Пошта</span>
+            <span class="modal-form-input-wrapper"
+              ><input
+                class="modal-form-input"
+                type="email"
+                name="user-email"
+                required
+              />
+              <svg
+                class="modal-form-icon"
+                width="18px"
+                height="18px"
+                aria-label="email icon"
+              >
+                <use href="./images/icons.svg#emailform"></use>
+              </svg>
+            </span>
+          </label>
+
+          <!-- Коментар -->
+          <label class="modal-form-field">
+            <span class="modal-form-input-descr">Коментар</span>
+            <textarea
+              class="modal-form-comment"
+              name="user-comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+
+          <!-- Погодження з умовами -->
+          <label class="modal-form-conditions">
+            <input
+              class="modal-form-conditions-checkbox visually-hidden"
+              type="checkbox"
+              name="user-conditions"
+              value="agreed-with-conditions"
+              required
+            />
+            <svg
+              class="modal-form-checkbox"
+              width="16px"
+              height="15px"
+              aria-label="checkbox icon"
+            >
+              <use
+                href="./images/icons.svg#iconcheck"
+                class="modal-form-checkbox-icon"
+              ></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю&nbsp;
+            <a
+              href="https://youtu.be/G1IbRujko-A"
+              class="modal-form-conditions-link"
+              >Умови договору</a
+            ></label
+          >
+
+          <!-- Відправити-Кнопка -->
+          <button type="submit" class="modal-form-button">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
