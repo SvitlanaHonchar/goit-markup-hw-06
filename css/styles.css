@@ -1048,6 +1048,8 @@ body {
   border-radius: 4px;
 
   outline: none;
+
+  transition: border-color var(--transition-param);
 }
 
 .subscribe-form-input:focus {
